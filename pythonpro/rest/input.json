@@ -1,0 +1,3 @@
+{
+	"post_vlan": {"method": "post", "uri": "openconfig-vlan:vlans", "vlanid": 0}
+}
