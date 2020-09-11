@@ -1,0 +1,6 @@
+commands
+show software
+show sys software
+vlan create 101 type port-mstprstp 0
+show int vlan 101
+no vlan 101

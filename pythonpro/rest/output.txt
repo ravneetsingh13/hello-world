@@ -1,0 +1,39 @@
+The POST request is PASS for creating VLAN 101 and Response is:
+<Response [201]>
+CREATED
+
+++++++++++++++++++++++++++++++++++++++
+The GET request is PASS for URI http://10.133.136.85:8080/rest/restconf/data/openconfig-vlan:vlans/vlan=101 and Response is:
+
+Status: 200 OK
+{
+  "openconfig-vlan:vlan": [
+    {
+      "config": {
+        "extreme-mod-oc-vlan:stg-id": 1,
+        "name": "VLAN-101",
+        "status": "ACTIVE",
+        "tpid": "oc-vlan-types:TPID_0x8100",
+        "vlan-id": 101
+      },
+      "state": {
+        "extreme-mod-oc-vlan:stg-id": 1,
+        "name": "VLAN-101",
+        "status": "ACTIVE",
+        "tpid": "oc-vlan-types:TPID_0x8100",
+        "vlan-id": 101
+      },
+      "vlan-id": "101"
+    }
+  ]
+}
+
+++++++++++++++++++++++++++++++++++++++
+
+The DELETE request is PASS for deleting VLAN 101 and Response is:
+<Response [204]>
+NO CONTENT
+
+
+++++++++++++++++++++++++++++++++++++++
+
